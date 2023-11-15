@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "example.html",
+    "href": "example.html",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nkeypoint 1\nkeypoint 2\n\n\n\n\nThis is an example lesson for The Carpentries.\n\n\n\n\n\n\n\n\n\n\nQ: If you aren’t part of the solution, then what are you?\n\n\n\n\n\n\n  \n\n\n\nA: part of the precipitate\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is a callout block. It contains at least three colons.\n\n\n\n\n\n\n\n\n\n\n\n\nI’m really excited for the new template when it arrives :grin:.\n— Toby Hodges\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\nThis is an instructor note. It contains information that can be useful for instructors to know such as\n\nUseful hints about places that need extra attention\nsetup instructions for live coding\nreminders of what the learners should already know\nanything else\n\nYou can also include _any markdown elements_ like `code blocks`\n\n\n\na random image of a cute kitten\n\n\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nincluding a collapsed version of a very long block of output/a large image from a code block, which the learner can expand if they want to check their output against the lesson\na reminder of some important concept/information required to follow the lesson, that you expect only some learners will need to read\nwrapping a set of optional exercises for an episode\n\n\n\n\n\n\n\n\n\nFour fruits with color and price in imaginary dollars\n\n\nfruit\ncolor\nprice\n\n\n\n\napple\n:red_square:\n$2.05\n\n\npear\n:green_square:\n$1.37\n\n\norange\n:orange_square:\n$3.09\n\n\ncatfruit\n:black_large_square:\n$999.99\n\n\n\n\n\n\n\nprint(\"Hello, quarto!\")\n\n[1] \"Hello, quarto!\"\n\nfn &lt;- function(x) {\n  for (i in seq_along(x)) {\n    out &lt;- x[i] + 1\n  }\n  out\n}\n\nfn(1:10)\n\n[1] 11\n\n\n\n\n\n\nHello, I’m a blockquote"
+  },
+  {
+    "objectID": "example.html#questions-objectives-keypoints",
+    "href": "example.html#questions-objectives-keypoints",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nkeypoint 1\nkeypoint 2\n\n\n\n\nThis is an example lesson for The Carpentries."
+  },
+  {
+    "objectID": "example.html#excercises-challenges",
+    "href": "example.html#excercises-challenges",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "Q: If you aren’t part of the solution, then what are you?\n\n\n\n\n\n\n  \n\n\n\nA: part of the precipitate"
+  },
+  {
+    "objectID": "example.html#callout-blocks",
+    "href": "example.html#callout-blocks",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "This is a callout block. It contains at least three colons.\n\n\n\n\n\n\n\n\n\n\n\n\nI’m really excited for the new template when it arrives :grin:.\n— Toby Hodges"
+  },
+  {
+    "objectID": "example.html#instructor-notes",
+    "href": "example.html#instructor-notes",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "This is an instructor note. It contains information that can be useful for instructors to know such as\n\nUseful hints about places that need extra attention\nsetup instructions for live coding\nreminders of what the learners should already know\nanything else\n\nYou can also include _any markdown elements_ like `code blocks`\n\n\n\na random image of a cute kitten"
+  },
+  {
+    "objectID": "example.html#spoilers",
+    "href": "example.html#spoilers",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "including a collapsed version of a very long block of output/a large image from a code block, which the learner can expand if they want to check their output against the lesson\na reminder of some important concept/information required to follow the lesson, that you expect only some learners will need to read\nwrapping a set of optional exercises for an episode"
+  },
+  {
+    "objectID": "example.html#tables",
+    "href": "example.html#tables",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "Four fruits with color and price in imaginary dollars\n\n\nfruit\ncolor\nprice\n\n\n\n\napple\n:red_square:\n$2.05\n\n\npear\n:green_square:\n$1.37\n\n\norange\n:orange_square:\n$3.09\n\n\ncatfruit\n:black_large_square:\n$999.99"
+  },
+  {
+    "objectID": "example.html#code-blocks",
+    "href": "example.html#code-blocks",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "print(\"Hello, quarto!\")\n\n[1] \"Hello, quarto!\"\n\nfn &lt;- function(x) {\n  for (i in seq_along(x)) {\n    out &lt;- x[i] + 1\n  }\n  out\n}\n\nfn(1:10)\n\n[1] 11"
+  },
+  {
+    "objectID": "example.html#block-quotes",
+    "href": "example.html#block-quotes",
+    "title": "Carpentries lesson",
+    "section": "",
+    "text": "Hello, I’m a blockquote"
+  }
+]
