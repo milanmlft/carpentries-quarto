@@ -9,6 +9,6 @@ contributes:
     format: carpentries-html
   formats:
     html:
-      theme: [main.scss]
       filters:
-        - lesson.lua
+        - main.lua
+        - callouts.lua
