@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+   $head.html()$ 
+</head>
+
+
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+
+<header id="title-block-header">
+<style>
+  .quarto-title-block .quarto-title-banner {
+    background-image: url(assets/img/bg3.jpg);
+    background-size: cover;
+  }
+</style>
+<div class="page-header min-height-400" style="background-image: url($title-block-banner$);" loading="lazy">
+$if(title-block-mask)$$title-block-mask$$endif$
+</div>
+</header>
+
+
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</nav>
+$endif$
+
+<div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+
+<section class="position-relative">
+<div class="container">
+<div class="row">
+<div class="col-12 mx-auto">
+$body$
+</div>
+</div>
+</div>
+</section>
+</div>
+
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+
+</html>
