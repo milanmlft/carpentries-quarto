@@ -8,5 +8,30 @@ format:
     toc-location: left
 
 carpentries:
+  branch: main
+  contact: team@carpentries.org
+  license: CC-BY 4.0
   title: "Carpentries lesson"
-  carpentry_icon: "software"
+  handout: ~
+  cp: false
+  lc: false
+  dc: false
+  swc: true
+  carpentry: swc
+  carpentry_name: Software Carpentry
+  carpentry_icon: software
+  life_cycle: pre-alpha
+  pre_alpha: true
+  alpha: false
+  beta: false
+  stable: ~
+  doi: ~
+  created: '2023-11-23'
+  keywords: software, data, lesson, The Carpentries
+  episodes: example.qmd
+  learners: ~
+  instructors: ~
+  profiles: ~
+  url: https://milanmlft.github.io/carpentries-quarto/
+  analytics: carpentries
+  lang: en
