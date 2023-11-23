@@ -15,13 +15,6 @@ format: carpentries-html
  - objective 2
 ::::::
 
-<!-- EPISODE CONTENT HERE -->
-
-:::::: keypoints
- - keypoint 1
- - keypoint 2
-::::::
-
 This is an example lesson for The Carpentries.
 
 ## Excercises / challenges
@@ -116,3 +109,9 @@ fn(1:10)
 ## Block quotes
 
 > Hello, I'm a blockquote
+
+:::::: keypoints
+ - keypoint 1
+ - keypoint 2
+::::::
+
