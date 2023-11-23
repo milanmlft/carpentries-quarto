@@ -1,0 +1,239 @@
+<header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav {{#yaml}}{{carpentry_icon}}{{/yaml}}">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+  <div class="container-fluid top-nav-container">
+    <div class="col-md-6">
+      <div class="large-logo">
+        <img alt="{{#yaml}}{{carpentry_name}}{{/yaml}}"
+          src="{{#site}}{{root}}{{/site}}assets/images/{{#yaml}}{{carpentry_icon}}-logo.svg{{/yaml}}">
+        {{#yaml}}{{#life_cycle}}
+        {{#pre_alpha}}
+        <abbr class="badge badge-light"
+          title="This lesson is in the pre-alpha phase, which means that it is in early development, but has not yet been taught."
+          style="background-color: #FF4955; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha"
+            class="alert-link" style="color: #000">
+            <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
+            Pre-Alpha
+          </a>
+          <span class="visually-hidden">This lesson is in the pre-alpha phase, which means that it is in early
+            development, but has not yet been taught.</span>
+        </abbr>
+        {{/pre_alpha}}
+        {{#alpha}}
+        <abbr class="badge badge-light"
+          title="This lesson is in the alpha phase, which means that it has been taught once and lesson authors are iterating on feedback."
+          style="background-color: #FFC700; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#field-testing-alpha-stage" class="alert-link"
+            style="color: #383838">
+            <i aria-hidden="true" class="icon" data-feather="alert-triangle" style="border-radius: 5px"></i>
+            Alpha
+          </a>
+          <span class="visually-hidden">This lesson is in the alpha phase, which means that it has been taught once and
+            lesson authors are iterating on feedback.</span>
+        </abbr>
+        {{/alpha}}
+        {{#beta}}
+        <abbr class="badge badge-light"
+          title="This lesson is in the beta phase, which means that it is ready for teaching by instructors outside of the original author team."
+          style="background-color: #001483; border-radius: 5px">
+          <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="alert-link"
+            style="color: #FFF7F1">
+            <i aria-hidden="true" class="icon" data-feather="alert-circle" style="border-radius: 5px"></i>
+            Beta
+          </a>
+          <span class="visually-hidden">This lesson is in the beta phase, which means that it is ready for teaching by
+            instructors outside of the original author team.</span>
+        </abbr>
+        {{/beta}}
+        {{#stable}}
+        {{#doi}}
+        <abbr class="badge badge-light" title="This lesson has passed peer review"
+          style="background-color: #FFE7A8; border-color: #0044d7; border-style: solid; border-radius: 5px">
+          <a href="https://doi.org/{{doi}}" class="external-link alert-link" style="color: #383838;">
+            <i aria-hidden="true" class="icon" data-feather="user-check" style="border-radius: 5px"></i>
+            DOI: {{doi}}
+          </a>
+        </abbr>
+        {{/doi}}
+        {{/stable}}
+        {{/life_cycle}}{{/yaml}}
+      </div>
+    </div>
+    <div class="selector-container">
+      {{#yaml}}{{#workbench-beta}}
+      <div class="beta-alert alert alert-light alert-dismissable fade show" role="alert">
+        {{#pre-beta-date}}
+        <abbr class="icon"
+          title="This lesson is in the Workbench Beta Phase (pre-beta stage) and is a snapshot of {{&title}} from {{pre-beta-date}}. Editing this page will have no effect on the lesson. Click here to go back to the styles version."
+          style="text-decoration: unset">
+          <span class="visually-hidden">This lesson is in the Workbench Beta Phase (pre-beta stage) and is a snapshot of
+            {{&title}} from {{pre-beta-date}}. Editing this page will have no effect on the lesson.</span>
+          <a href="{{old-url}}" class="alert-link" style="color: #383838">
+            <i aria-hidden="true" class="icon" data-feather="alert-triangle"
+              style="background: #FFC700; border-radius: 5px"></i>
+            <span class="visually-hidden">Visit the styles version of the lesson</span>
+          </a>
+        </abbr>
+        {{/pre-beta-date}}
+        {{#beta-date}}
+        <abbr class="icon"
+          title="This lesson is in the Workbench Beta Phase (beta stage). Click here to visit a snapshot of the styles version from {{beta-date}}."
+          style="text-decoration: unset">
+          <span class="visually-hidden">This lesson is in the Workbench Beta Phase (beta stage).</span>
+          <a href="{{old-url}}" class="alert-link" style="color: #383838">
+            <i aria-hidden="true" class="icon" data-feather="alert-circle"
+              style="background: #719eff; border-radius: 5px"></i>
+            <span class="visually-hidden">Visit a snapshot of the styles version from {{beta-date}}</span>
+          </a>
+        </abbr>
+        {{/beta-date}}
+        {{^beta-date}}{{^pre-beta-date}}
+        <i aria-hidden="true" class="icon" data-feather="alert-circle" style="color: #5bbad5"></i>
+        {{/pre-beta-date}}{{/beta-date}}
+        Workbench Beta |
+        <a href="https://carpentries.typeform.com/to/KRBl4IZM" class="alert-link"
+          style="text-decoration: wavy overline">Give Feedback</a> |
+        <a href="https://carpentries.github.io/workbench/beta-phase.html" class="alert-link">Learn More</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {{/workbench-beta}}{{/yaml}}
+      {{#yaml}}{{#language}}
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle " type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          English (US) <i data-feather="chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">French</button></li>
+        </ul>
+      </div>
+      {{/language}}{{/yaml}}
+      <div class="dropdown">
+        {{#instructor}}
+        <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i aria-hidden="true" class="icon" data-feather="eye"></i> Instructor View <i data-feather="chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><button class="dropdown-item" type="button" onclick="window.location.href='../{{this_page}}';">Learner
+              View</button></li>
+        </ul>
+        {{/instructor}}
+        {{^instructor}}
+        <button class="btn btn-secondary dropdown-toggle bordered-button" type="button" id="dropdownMenu1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i aria-hidden="true" class="icon" data-feather="eye"></i> Learner View <i data-feather="chevron-down"></i>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><button class="dropdown-item" type="button"
+              onclick="window.location.href='instructor/{{this_page}}';">Instructor View</button></li>
+        </ul>
+        {{/instructor}}
+      </div>
+    </div>
+  </div>
+  <hr />
+</header>
+
+<nav class="navbar navbar-expand-xl navbar-light bg-white bottom-nav {{#yaml}}{{carpentry_icon}}{{/yaml}}"
+  aria-label="Main Navigation">
+  <div class="container-fluid nav-container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="menu-title">Menu</span>
+    </button>
+    <div class="nav-logo">
+      <img class="small-logo" alt="{{#yaml}}{{carpentry_name}}{{/yaml}}"
+        src="{{#site}}{{root}}{{/site}}assets/images/{{#yaml}}{{carpentry_icon}}-logo-sm.svg{{/yaml}}">
+    </div>
+    <div class="lesson-title-md">
+      {{#site}}{{&title}}{{/site}}
+    </div>
+    <div class="search-icon-sm">
+      <!-- TODO: do not show until we have search
+      <i role="img" aria-label="search button" data-feather="search"></i>
+      -->
+    </div>
+    <div class="desktop-nav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <span class="lesson-title">
+            {{#site}}{{&title}}{{/site}}
+          </span>
+        </li>
+        {{#overview}}
+        {{! We want to include a setup link prominently in the resources for overview pages }}
+        <li>
+          {{! NOTE: the reason why we do not use the site root here is because we would need to set the site context
+          _before_ overview }}
+          <a class="nav-link" href="index.html#setup">Setup</a>
+        </li>
+        {{/overview}}
+        {{#instructor}}
+        {{^overview}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}instructor/key-points.html">Key Points</a>
+        </li>
+        {{/overview}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}instructor/instructor-notes.html">Instructor Notes</a>
+        </li>
+        {{^overview}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}instructor/images.html">Extract All Images</a>
+        </li>
+        {{/overview}}
+        {{/instructor}}
+        {{^instructor}}
+        {{^overview}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}key-points.html">Key Points</a>
+        </li>
+        {{/overview}}
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}reference.html#glossary">Glossary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{#site}}{{root}}{{/site}}profiles.html">Learner Profiles</a>
+        </li>
+        {{/instructor}}
+        {{#more}}
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            More <i data-feather="chevron-down"></i>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {{{more}}}
+          </ul>
+        </li>
+        {{/more}}
+      </ul>
+    </div>
+    <form class="d-flex col-md-2 search-form">
+      <fieldset disabled>
+        <input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success tablet-search-button" type="submit">
+          <i class="search-icon" data-feather="search" role="img" aria-label="search button"></i>
+        </button>
+      </fieldset>
+    </form>
+  </div><!--/div.container-fluid -->
+</nav>
+
+<div class="col-md-12 mobile-title">
+  {{#site}}{{&title}}{{/site}}
+</div>
+
+{{^overview}}
+<aside class="col-md-12 lesson-progress">
+  <div style="width: {{progress}}%" class="percentage">
+    {{progress}}%
+  </div>
+  <div class="progress {{#yaml}}{{carpentry_icon}}{{/yaml}}">
+    <div class="progress-bar {{#yaml}}{{carpentry_icon}}{{/yaml}}" role="progressbar" style="width: {{progress}}%"
+      aria-valuenow="{{progress}}" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    </div>
+  </div>
+</aside>
+{{/overview}}
