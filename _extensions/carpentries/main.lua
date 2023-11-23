@@ -22,10 +22,6 @@ function read_template_file(template)
     return content
 end
 
-local carpentries_vars = {
-
-}
-
 function render_template(template, context)
     local content = read_template_file(template)
     return lustache:render(content, context)
@@ -34,13 +30,22 @@ end
 function setCarpentriesStyling(meta)
     local meta_carpentries = meta.carpentries
 
-    -- Create a table of variables to pass to the template
-    local carpentries_vars = {}
-    for k, v in pairs(meta_carpentries) do
-        carpentries_vars[k] = pandoc.utils.stringify(v)
-    end
+    -- Create a table of variables to pass to the templates
+    local carpentries_vars = {
+        yaml = {}, -- Variables from _quarto.yml metadata
+        site = {   -- title and file paths for site component
+            title = pandoc.utils.stringify(meta.title),
+            root = "",
+            assets = "_extensions/carpentries/assets/",
+        }
+    }
 
-    quarto.log.output(carpentries_vars)
+    for k, v in pairs(meta_carpentries) do
+        if type(v) == "table" then
+            v = pandoc.utils.stringify(v)
+        end
+        carpentries_vars.yaml[k] = v
+    end
 
     -- Add general styling from CSS and JavaScript files
     quarto.doc.add_html_dependency({
@@ -51,12 +56,11 @@ function setCarpentriesStyling(meta)
 
     -- Render HTML templates
     local head = render_template("head.html", carpentries_vars)
-    local test = render_template("test.html", carpentries_vars)
+    local test = render_template("header.html", carpentries_vars)
 
     -- Include the html templates
     quarto.doc.include_text('in-header', head)
-    -- quarto.doc.include_file('in-header', 'templates/head.html')
-    quarto.doc.include_file('before-body', 'templates/test.html')
+    quarto.doc.include_text('in-header', test)
 end
 
 return {
