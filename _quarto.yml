@@ -6,3 +6,7 @@ format:
   carpentries-html:
     toc: true
     toc-location: left
+
+carpentries:
+  title: "Carpentries lesson"
+  carpentry_icon: "software"
