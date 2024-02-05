@@ -18,7 +18,7 @@
     "href": "example.html#excercises-challenges",
     "title": "Carpentries lesson Example",
     "section": "Excercises / challenges",
-    "text": "Excercises / challenges\n\n\n\n\n\nChemistry Joke\n\nQ: If you aren’t part of the solution, then what are you?\n\n\n\n\n\n\n  \n  Show me the solution\n  \n\n\n\nA: part of the precipitate"
+    "text": "Excercises / challenges\n\n\n\n\n\nChemistry Joke\n\nQ: If you aren’t part of the solution, then what are you?\n\nSolution. A: part of the precipitate"
   },
   {
     "objectID": "example.html#callout-blocks",
@@ -32,7 +32,7 @@
     "href": "example.html#instructor-notes",
     "title": "Carpentries lesson Example",
     "section": "Instructor notes",
-    "text": "Instructor notes\n\n\n\n  \n  \n  Instructor Note\n  \n\n\n\nThis is an instructor note. It contains information that can be useful for instructors to know such as\n\nUseful hints about places that need extra attention\nsetup instructions for live coding\nreminders of what the learners should already know\nanything else\n\nYou can also include _any markdown elements_ like `code blocks`\n\n\n\na random image of a cute kitten"
+    "text": "Instructor notes\n\n\n\n  \n  \n  Instructor Note\n  \n\n\n\nThis is an instructor note. It contains information that can be useful for instructors to know such as\n\nUseful hints about places that need extra attention\nsetup instructions for live coding\nreminders of what the learners should already know\nanything else\n\nYou can also include _any markdown elements_ like `code blocks`\n\n\n\nImages can also appear in instructor notes"
   },
   {
     "objectID": "example.html#spoilers",

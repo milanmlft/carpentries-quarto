@@ -1,1 +1,1 @@
-Sitemap: https://github.com/milanmlft/carpentries-quarto/sitemap.xml
+Sitemap: https://milanmlft.github.io/carpentries-quarto/sitemap.xml
