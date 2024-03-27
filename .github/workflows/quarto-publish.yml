@@ -28,10 +28,10 @@ jobs:
           # version: SPECIFIC-QUARTO-VERSION-HERE
       
       - name: Setup R
-        uses: r-lib/actions/setup-r@faf8dab163d42f40068656974683ffa606ec27a3 # v2
+        uses: r-lib/actions/setup-r@d3c5ef7aa1818ef107b0f28a4fa80bdb45c1b0db # v2
 
       - name: Install dependencies
-        uses: r-lib/actions/setup-renv@faf8dab163d42f40068656974683ffa606ec27a3 # v2
+        uses: r-lib/actions/setup-renv@d3c5ef7aa1818ef107b0f28a4fa80bdb45c1b0db # v2
         with:
           cache-version: 1
 
