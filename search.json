@@ -4,14 +4,14 @@
     "href": "example.html",
     "title": "Carpentries lesson Example",
     "section": "",
-    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nkeypoint 1\nkeypoint 2\n\n\n\n\nThis is an example lesson for The Carpentries."
+    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\nThis is an example lesson for The Carpentries."
   },
   {
     "objectID": "example.html#questions-objectives-keypoints",
     "href": "example.html#questions-objectives-keypoints",
     "title": "Carpentries lesson Example",
     "section": "",
-    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nkeypoint 1\nkeypoint 2\n\n\n\n\nThis is an example lesson for The Carpentries."
+    "text": "question 1\nquestion 2\n\n\n\n\n\n\n\n\n\nobjective 1\nobjective 2\n\n\n\n\n\n\nThis is an example lesson for The Carpentries."
   },
   {
     "objectID": "example.html#excercises-challenges",
@@ -60,6 +60,6 @@
     "href": "example.html#block-quotes",
     "title": "Carpentries lesson Example",
     "section": "Block quotes",
-    "text": "Block quotes\n\nHello, I’m a blockquote"
+    "text": "Block quotes\n\nHello, I’m a blockquote\n\n\n\n\n\n\nKeypoints\n\n\nkeypoint 1\nkeypoint 2"
   }
 ]
